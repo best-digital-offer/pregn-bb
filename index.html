@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Pregnancy Due Date Calculator - Accurate LMP-Based Tool</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fcff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #e84e89 0%, #ff7bac 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        h2 {
+            color: #e84e89;
+            margin: 25px 0 15px;
+            border-bottom: 2px solid #fff7fb;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #555;
+            margin: 20px 0 12px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .calculator-preview {
+            background: #fff7fb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            border-left: 4px solid #e84e89;
+        }
+        .cta-box {
+            background: #fff7fb;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+            border: 2px dashed #e84e89;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #e84e89;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #d43d7a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .testimonial {
+            background: white;
+            border-left: 4px solid #e84e89;
+            padding: 20px;
+            margin: 25px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .testimonial-author {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .content {
+                padding: 20px;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Free Pregnancy Due Date Calculator</h1>
+            <p>Accurate, Easy-to-Use Tool Based on Last Menstrual Period (LMP)</p>
+        </div>
+        
+        <div class="content">
+            <h2>Calculate Your Estimated Due Date in Seconds</h2>
+            <p>Expecting a baby brings excitement and questions, especially about when your little one might arrive. While healthcare providers will give you an official due date, it's helpful to have tools to estimate this important date yourself.</p>
+            
+            <div class="calculator-preview">
+                <h3>How Pregnancy Due Date Calculation Works</h3>
+                <p>The most common method for estimating due dates is <strong>Naegele's Rule</strong>, which adds 280 days (40 weeks) to the first day of your last menstrual period (LMP). This method assumes a regular 28-day cycle and is widely used by healthcare professionals.</p>
+                <p>While due dates are estimates (only about 5% of babies arrive exactly on their due date), they provide an important timeline for tracking pregnancy progress and planning for your baby's arrival.</p>
+            </div>
+            
+            <h2>Why Use a Pregnancy Due Date Calculator?</h2>
+            <p>Knowing your estimated due date helps you:</p>
+            <ul>
+                <li><strong>Track pregnancy progress</strong> week by week</li>
+                <li><strong>Plan prenatal appointments</strong> and tests</li>
+                <li><strong>Prepare for maternity leave</strong> and baby's arrival</li>
+                <li><strong>Understand fetal development</strong> milestones</li>
+                <li><strong>Monitor pregnancy symptoms</strong> and changes</li>
+            </ul>
+            
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Results</h3>
+                    <p>Get your estimated due date immediately after entering your LMP</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your data stays private - calculations happen locally in your browser</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works perfectly on all devices - phone, tablet, or computer</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💯</div>
+                    <h3>Completely Free</h3>
+                    <p>No registration required, no hidden costs, no spam</p>
+                </div>
+            </div>
+            
+            <h2>Understanding Pregnancy Weeks and Trimesters</h2>
+            <p>Pregnancy is typically divided into three trimesters, each with distinct developmental milestones:</p>
+            
+            <h3>First Trimester (Weeks 1-12)</h3>
+            <p>The foundation period where major organs begin forming. Many women experience morning sickness, fatigue, and other early pregnancy symptoms during this time.</p>
+            
+            <h3>Second Trimester (Weeks 13-26)</h3>
+            <p>Often called the "honeymoon period" of pregnancy. Morning sickness typically subsides, energy returns, and many women feel their baby's first movements.</p>
+            
+            <h3>Third Trimester (Weeks 27-40+)</h3>
+            <p>The final stretch where the baby gains weight rapidly and prepares for birth. Mothers may experience increased discomfort as they approach their due date.</p>
+            
+            <div class="testimonial">
+                <p>"I used this calculator with both of my pregnancies. It was accurate within a few days of what my doctor calculated. The week-by-week information helped me understand what to expect throughout my pregnancy journey."</p>
+                <p class="testimonial-author">- Sarah J., First-time Mom</p>
+            </div>
+            
+            <h2>Important Considerations</h2>
+            <p>While online due date calculators provide helpful estimates, remember:</p>
+            <ul>
+                <li><strong>Consult your healthcare provider</strong> for medical advice and official due date confirmation</li>
+                <li><strong>Ultrasound measurements</strong> in early pregnancy often provide the most accurate due date</li>
+                <li><strong>Only about 5% of babies</strong> are born exactly on their estimated due date</li>
+                <li>If you have <strong>irregular periods</strong>, the LMP method may be less accurate</li>
+            </ul>
+            
+            <div class="cta-box">
+                <h2>Ready to Calculate Your Due Date?</h2>
+                <p>Try our free, accurate pregnancy due date calculator today. Simply enter the first day of your last menstrual period and get instant results.</p>
+                <a href="https://pregnancydate.online/" class="cta-button" title="Pregnancy Due Date Calculator">Calculate Your Due Date Now</a>
+                <p style="margin-top: 10px; font-size: 0.9rem;">No registration required • 100% free • Privacy protected</p>
+            </div>
+            
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>How accurate is the due date calculator?</h3>
+            <p>Our calculator uses the standard medical formula (Naegele's Rule) and provides estimates comparable to those used by healthcare providers. However, ultrasound confirmation in early pregnancy typically provides the most accurate due date.</p>
+            
+            <h3>What if I don't know my LMP?</h3>
+            <p>If you're unsure of your last menstrual period date, your healthcare provider can estimate your due date using ultrasound measurements, which are especially accurate in the first trimester.</p>
+            
+            <h3>Can due dates change?</h3>
+            <p>Yes, healthcare providers may adjust your due date based on ultrasound measurements, especially if there's a significant difference from the LMP-based calculation or if you have irregular periods.</p>
+            
+            <h3>Is my data secure?</h3>
+            <p>Absolutely. Our calculator processes your information locally in your browser. We don't store your LMP date or any personal pregnancy information.</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 PregnancyDate.online | Free Pregnancy Due Date Calculator</p>
+            <p>Informational resource only - Always consult healthcare professionals for medical advice</p>
+        </div>
+    </div>
+</body>
+</html>
